@@ -2,13 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #757575;
     font-size: 14px;
+    background: #ffffff;
+    font-weight: 400;
 }
 
 *:focus {
     outline: none !important;
     border: 2px solid #2196F3;
-
-
 }
 
 a,
@@ -24,7 +24,6 @@ a:hover {
 
 .content {
     flex: 1 1 auto;
-
 }
 
 .container {
@@ -59,7 +58,6 @@ a:hover {
 }
 
 .main__title {
-
     color: #212121;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -79,8 +77,6 @@ a:hover {
     color: #2196F3;
 }
 
-.contacts {}
-
 .contact__row {
     display: flex;
     justify-content: space-between;
@@ -88,7 +84,7 @@ a:hover {
 }
 
 .email {
-    color: #2196F3;
+    color: #757575;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
@@ -113,7 +109,7 @@ a:hover {
 
 }
 
-.text {
+.hi-banner-title {
     max-width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -142,4 +138,134 @@ a:hover {
     background-color: yellow;
     color: #2196F3;
     cursor: pointer;
+}
+
+.to-do {
+    padding: 94px 0 0 0;
+}
+
+.to-do__row {
+    display: flex;
+    margin: 0 -30px 0 0;
+
+}
+
+.to-do__body {
+    margin: 0 30px 0 0;
+}
+
+.to-do__body:last-child {
+    margin: 0px;
+}
+
+.to-do__title {
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    color: #212121;
+}
+
+.to-do__text {
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.work-img {
+    padding: 94px 0;
+}
+
+.work-img__title {
+    text-align: center;
+    margin: 0px 0 50px 0;
+}
+
+.title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+
+}
+
+.work-img__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-img__img {
+    max-width: 370px;
+}
+
+.team {
+    background: #F5F4FA;
+}
+
+.team__title {
+    padding: 94px 0 50px 0;
+    text-align: center;
+}
+
+.team__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__body {
+    max-width: 270px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 0 0 94px 0;
+}
+
+.team-body__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-title {
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.job-title {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+footer {
+    background-color: #2F303A;
+}
+
+.footer__row {
+    display: flex;
+    height: 252px;
+    align-items: center;
+}
+
+.fotter__body {}
+
+.fotter__title {
+    margin: 0 0 20px 0;
+}
+
+.footer__text {
+    margin: 0 0 9px 0;
+}
+
+.footer__text:last-child {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+    color: #ffffff;
+    letter-spacing: 0.03em;
 }
