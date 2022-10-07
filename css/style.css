@@ -34,11 +34,32 @@ a:hover {
 .main__row {
   display: flex;
   height: 80px;
-  justify-content: space-between;
   align-items: center;
 }
 
+.main__nav__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__row {
+  display: flex;
+  justify-content: end;
+}
+
+.main-nav {
+  flex: 0 1 24%;
+}
+
 .logo {
+  flex: 0 1 25%;
+}
+
+.contacts {
+  flex: 0 1 50%;
+}
+
+.logo__a {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   color: #000000;
@@ -48,13 +69,6 @@ a:hover {
 
 .logo-blue {
   color: #2196F3;
-}
-
-.main__nav__row {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 320px 0 0;
-  width: 281px;
 }
 
 .main__title {
@@ -77,16 +91,11 @@ a:hover {
   color: #2196F3;
 }
 
-.contact__row {
-  display: flex;
-  justify-content: space-between;
-  width: 307px;
-}
-
 .email {
   color: #757575;
   font-weight: 500;
   letter-spacing: 0.02em;
+  margin: 0 50px 0 0;
 }
 
 .phone {
@@ -106,10 +115,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 600px;
+  background-image: url(./img/main-img_bg.jpg);
 }
 
 .hi-banner-title {
-  max-width: 696px;
+  max-width: 50%;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -120,7 +130,6 @@ a:hover {
 }
 
 .button__submit {
-  width: 216px;
   height: 50px;
   border: 0px;
   border-radius: 4px;
@@ -144,6 +153,7 @@ a:hover {
 
 .to-do__row {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -30px 0 0;
 }
 
@@ -189,10 +199,12 @@ a:hover {
 .work-img__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .work-img__img {
-  max-width: 370px;
+  flex: 0 1 auto;
+  max-width: 100%;
 }
 
 .team {
@@ -206,6 +218,7 @@ a:hover {
 
 .team__row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -247,6 +260,10 @@ footer {
   align-items: center;
 }
 
+.fotter__body {
+  padding: 0 0 0 15px;
+}
+
 .fotter__title {
   margin: 0 0 20px 0;
 }
@@ -263,4 +280,50 @@ address {
   font-style: normal;
   color: #ffffff;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 1169px) {
+  .container {
+    max-width: 970px;
+  }
+  .work-img__img {
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .work-img__img {
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+  .hi-banner-title {
+    max-width: 100%;
+  }
+  .to-do__body {
+    padding-top: 15px;
+  }
+  .team__body {
+    margin: 0 10px 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  .work-img__img {
+    padding-top: 10px;
+    padding-left: 3px;
+  }
+  .hi-banner-title {
+    max-width: 100%;
+  }
+  .to-do__body {
+    padding-top: 15px;
+  }
+  .team__body {
+    margin: 0px 0 10px 20px;
+  }
 }
